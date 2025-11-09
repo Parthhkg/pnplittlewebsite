@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f2027">
+  <title>My Will — A Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Lock Screen -->
+  <div id="lock-screen">
+    <h1>Enter the Date that Changed My Life Forever... 💖</h1>
+    <input type="password" id="password" placeholder="DDMMYYYY">
+    <button id="unlock-btn">Let's Start!! ❤️</button>
+    <p id="error"></p>
+  </div>
+
+  <!-- Scene Container -->
+  <div id="story-scene" style="display:none;">
+    <div class="scene-one">
+      <img src="assets/images/Parth.png" alt="You" class="your-photo">
+      <div class="will-orb"></div>
+      <div class="dialogue">
+        <p id="line"></p>
+        <button id="next-btn" style="display:none;">Next ➜</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game 1 Section -->
+  <div id="game-one" style="display:none;">
+    <div class="game-one">
+      <h2>Catch Him If You Can 💥</h2>
+      <img id="target" src="assets/images/Parth.png" alt="You Running">
+      <p id="hit-count">Hits: 0</p>
+    </div>
+  </div>
+
+  <!-- Game 2 -->
+<div id="game-two" style="display:none;">
+  <div id="water-bg"></div>
+  <img id="drowning-parth" src="assets/images/Parth.png" alt="Drowning Parth">
+  <button id="love-btn">❤️ Give Love</button>
+  <p id="love-status">
+    Oh no!! Looks like he's drowning in guilt!! <br>
+    Quick!! You should probably give him some love so he doesn't drown!!
+  </p>
+</div>
+
+<div id="final-task" style="display:none;">
+  <div id="phone-frame">
+    <div id="phone-header">
+      <span id="signal">📶</span>
+      <span id="time">9:41</span>
+      <span id="battery">🔋</span>
+    </div>
+
+    <div id="phone-screen">
+      <h3 style="margin-top:10px;">Contacts</h3>
+      <div class="contact-card">
+        <div class="avatar"></div>
+        <div class="contact-info">
+          <span id="contact-number">+91 95090 43237</span>
+          <button id="rename-btn">Save contact</button>
+        </div>
+      </div>
+
+      <p id="nickname-msg" style="margin-top:20px; font-size:16px; text-align:center;"></p>
+    </div>
+  </div>
+</div>
+
+  <audio id="bg-music" src="/Users/Dell/Desktop/Parth/Piku/ApologyWebsite/assets/music/04_Landras_Dream.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
